@@ -1,0 +1,29 @@
+urls :
+  default : http://quickfuseapps.com/
+
+
+data :
+  default : config/data
+  mobile  : config/data
+
+page_dir:
+  default : ./lib/pages/desktop
+  mobile  : ./lib/pages/mobile
+
+users :
+  default : config/users.yml
+
+db:
+  host     : localhost
+  database : learninglabs_cucumber
+
+clients :
+  default:
+      browser: chrome
+  firefox:
+      browser: firefox
+  ie:
+      browser: ie
+  iphone5:
+    browser: chrome
+    device : Apple iPhone 5

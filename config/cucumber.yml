@@ -1,0 +1,8 @@
+<% source     = "./features"%>
+<% smoke      = "--tags ~@regression --tags ~@core"%>
+<% core       = "--tags ~@regression --tags ~@smoke"%>
+<% tag       = "@one"%>
+<% regression = "--tags ~@core --tags ~@smoke"%>
+<% common     = "--tags ~@skip --format pretty -r #{source}"%>
+
+functional              : --tags @functional   <%= common %>
