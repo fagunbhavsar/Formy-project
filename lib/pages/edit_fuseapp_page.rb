@@ -1,4 +1,4 @@
-class EditPage < Page
+class EditFuseappPage < Page
   page_url  base_url
 
   def view_pop_up
