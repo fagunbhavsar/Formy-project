@@ -13,7 +13,7 @@
     Then I select an option as "College"
     Then I select a checkbox as "Male"
     Then I select years of experience as "10+"
-    Then I select date as "05/24/2019"
+    Then I select date as "06/07/2019"
     And  I click on Submit button
     Then I see success message as "The form was successfully submitted!"
 
