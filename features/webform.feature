@@ -1,4 +1,3 @@
-
 @webform @functional
 
   Feature: Fill the web form with given details

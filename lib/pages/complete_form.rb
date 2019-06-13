@@ -1,16 +1,16 @@
 class CompleteForm < Page
   page_url         base_url
 
-  def enter_first_name
-    @browser.element(:id => "first-name").set(fisrtname)
+  def enter_first_name(fname)
+    @browser.element(:id => "first-name").set(fname)
   end
 
-  def enter_last_name
-    @browser.element(:id => "last-name").set(lastname)
+  def enter_last_name(lname)
+    @browser.element(:id => "last-name").set(lname)
   end
 
-  def enter_job_title
-    @browser.element(:id => "job-title").set(jobtitle)
+  def enter_job_title(title)
+    @browser.element(:id => "job-title").set(title)
   end
 
   def select_college

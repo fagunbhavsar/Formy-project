@@ -11,3 +11,7 @@ gem 'service_mock'
 gem 'look_like'
 gem "pry", :group => :development
 
+group :development, :test do
+  gem 'pry'
+  gem 'rb-readline'
+end

@@ -1,60 +1,28 @@
 Using the functional profile...
-[36m@basicapp[0m [36m@functional[0m
-Feature: Create a basic app to send an SMS or an Email
+[36m@webform[0m [36m@functional[0m
+Feature: Fill the web form with given details
 
-  [36m@smsoremail[0m
-  Scenario: Create basic app to send sms & email[90m                                       # features/basicapp.feature:6[0m
-    [32mGiven I open quick fuse app link[90m                                                   # features/steps/basicapp.rb:1[0m[0m
-    [32mThen I click on Create an app button[90m                                               # features/steps/basicapp.rb:5[0m[0m
-    [32mThen I see a popup[90m                                                                 # features/steps/basicapp.rb:9[0m[0m
-    [32mAnd I click on Let's get started button[90m                                            # features/steps/basicapp.rb:13[0m[0m
-    [32mThen I see application panel[90m                                                       # features/steps/basicapp.rb:17[0m[0m
-      #And   I see Basic tab is opened with following sections on left hand side column
-      #| Hang Up or Exit    |
-      #| Simple Prompt      |
-      #| Multipart Prompt   |
-      #| Jump to Page       |
-      #| Simple Menu        |
-      #| Transfer           |
-      #| Yes or No          |
-      #| Multipart + Yes/No |
-      #| Digits Input       |
-      #| Multiple Choice    |
-      #| Voice Recording    |
-      #| Label              |
-    [32mThen I see Messaging tab on left hand side column[90m                                  # features/steps/basicapp.rb:26[0m[0m
-    [32mAnd I click on Messaging tab[90m                                                       # features/steps/basicapp.rb:31[0m[0m
-      #Then  I see following sections
-      #| Fetch Twitter Feed |
-      #| Send an Email      |
-      #| Send an SMS        |
-    [32mAnd I see Start module on application panel[90m                                        # features/steps/basicapp.rb:40[0m[0m
-    [32mThen I click on New page button[90m                                                    # features/steps/basicapp.rb:45[0m[0m
-    [32mThen I see New Page popup[90m                                                          # features/steps/basicapp.rb:49[0m[0m
-    [32mAnd I enter name for [32m[1m"New App"[0m[0m[32m[90m                                                     # features/steps/basicapp.rb:54[0m[0m
-    [32mThen I click on Messaging tab[90m                                                      # features/steps/basicapp.rb:31[0m[0m
-    [32mThen I drag Send an SMS module to application panel[90m                                # features/steps/basicapp.rb:58[0m[0m
-    [32mAnd I connect Start and Send an SMS modules[90m                                        # features/steps/basicapp.rb:66[0m[0m
-    [32mThen I enter number for [32m[1m"2131243253435"[0m[0m[32m[90m                                            # features/steps/basicapp.rb:70[0m[0m
-    [32mAnd I enter message for [32m[1m"Hello World"[0m[0m[32m[90m                                              # features/steps/basicapp.rb:74[0m[0m
-    [32mThen I drag another component Send an Email to application panel[90m                   # features/steps/basicapp.rb:78[0m[0m
-    [32mAnd I enter host name for [32m[1m"smtp.gmail.com"[0m[0m[32m[90m                                         # features/steps/basicapp.rb:82[0m[0m
-    [32mAnd I enter port number as [32m[1m"465"[0m[0m[32m[90m                                                   # features/steps/basicapp.rb:86[0m[0m
-    [32mAnd I enter user name as [32m[1m"abc@gmail.com"[0m[0m[32m[90m                                           # features/steps/basicapp.rb:90[0m[0m
-    [32mAnd I enter password as [32m[1m"123456"[0m[0m[32m[90m                                                   # features/steps/basicapp.rb:94[0m[0m
-    [32mAnd I enter From address as [32m[1m"abc@gmail.com"[0m[0m[32m[90m                                        # features/steps/basicapp.rb:98[0m[0m
-    [32mAnd I enter To as [32m[1m"xyz@gmail.com"[0m[0m[32m[90m                                                  # features/steps/basicapp.rb:102[0m[0m
-    [32mAnd I enter subject as [32m[1m"SMS not sent"[0m[0m[32m[90m                                              # features/steps/basicapp.rb:106[0m[0m
-    [32mAnd I enter message text as [32m[1m"SMS to phone no 2131243253435 nt sent"[0m[0m[32m[90m                # features/steps/basicapp.rb:110[0m[0m
-    [32mThen I join Send an SMS component from Not Sent port to Send an Email component[90m    # features/steps/basicapp.rb:114[0m[0m
-    [32mThen I click on Basic tab[90m                                                          # features/steps/basicapp.rb:118[0m[0m
-    [32mThen I drag Hang Up or Exit component to application panel[90m                         # features/steps/basicapp.rb:122[0m[0m
-    [32mAnd I join Hang Up or Exit component from Sent port to Send an SMS component[90m       # features/steps/basicapp.rb:126[0m[0m
-    [32mThen I drag second Hang up or Exit component to application panel[90m                  # features/steps/basicapp.rb:130[0m[0m
-    [32mAnd I join Hang Up or Exit component from Not Sent port to Send an Email component[90m # features/steps/basicapp.rb:134[0m[0m
-    [32mThen I drag third Hang up or Exit component to application panel[90m                   # features/steps/basicapp.rb:138[0m[0m
-    [32mAnd I join Hang Up or Exit component from Sent port to Send an Email Component[90m     # features/steps/basicapp.rb:142[0m[0m
+  [36m@formdetails[0m
+  Scenario: Fill the web form with given details[90m                         # features/webform.feature:6[0m
+    [32mGiven I formy project app link[90m                                       # features/steps/webform.rb:1[0m[0m
+    [32mThen I click on Complete web form link[90m                               # features/steps/webform.rb:5[0m[0m
+    [31mThen I enter first name as [31m[1m"Fagun"[0m[0m[31m[90m                                   # features/steps/webform.rb:9[0m[0m
+[31m      undefined method `set' for #<Watir::HTMLElement: located: true; {:id=>"first-name"}> (NoMethodError)[0m
+[31m      ./lib/pages/complete_form.rb:5:in `enter_first_name'[0m
+[31m      ./features/steps/webform.rb:10:in `"I enter first name as {string}"'[0m
+[31m      features/webform.feature:9:in `Then I enter first name as "Fagun"'[0m
+    [36mThen I enter last name as [36m[1m"Bhavsar"[0m[0m[36m[90m                                  # features/steps/webform.rb:13[0m[0m
+    [36mThen I enter job title as [36m[1m"QA analyst"[0m[0m[36m[90m                               # features/steps/webform.rb:17[0m[0m
+    [36mThen I select an option as [36m[1m"College"[0m[0m[36m[90m                                 # features/steps/webform.rb:21[0m[0m
+    [36mThen I select a checkbox as [36m[1m"Male"[0m[0m[36m[90m                                   # features/steps/webform.rb:25[0m[0m
+    [36mThen I select years of experience as [36m[1m"10+"[0m[0m[36m[90m                           # features/steps/webform.rb:29[0m[0m
+    [36mThen I select date as [36m[1m"06/07/2019"[0m[0m[36m[90m                                   # features/steps/webform.rb:33[0m[0m
+    [36mAnd I click on Submit button[90m                                         # features/steps/webform.rb:37[0m[0m
+    [36mThen I see success message as [36m[1m"The form was successfully submitted!"[0m[0m[36m[90m # features/steps/webform.rb:41[0m[0m
 
-1 scenario ([32m1 passed[0m)
-33 steps ([32m33 passed[0m)
-0m21.833s
+[31mFailing Scenarios:[0m
+[31mcucumber -p functional features/webform.feature:6[0m[90m # Scenario: Fill the web form with given details[0m
+
+1 scenario ([31m1 failed[0m)
+11 steps ([31m1 failed[0m, [36m8 skipped[0m, [32m2 passed[0m)
+0m5.819s
