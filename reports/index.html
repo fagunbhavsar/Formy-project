@@ -3,26 +3,19 @@ Using the functional profile...
 Feature: Fill the web form with given details
 
   [36m@formdetails[0m
-  Scenario: Fill the web form with given details[90m                         # features/webform.feature:6[0m
-    [32mGiven I formy project app link[90m                                       # features/steps/webform.rb:1[0m[0m
-    [32mThen I click on Complete web form link[90m                               # features/steps/webform.rb:5[0m[0m
-    [31mThen I enter first name as [31m[1m"Fagun"[0m[0m[31m[90m                                   # features/steps/webform.rb:9[0m[0m
-[31m      undefined method `set' for #<Watir::HTMLElement: located: true; {:id=>"first-name"}> (NoMethodError)[0m
-[31m      ./lib/pages/complete_form.rb:5:in `enter_first_name'[0m
-[31m      ./features/steps/webform.rb:10:in `"I enter first name as {string}"'[0m
-[31m      features/webform.feature:9:in `Then I enter first name as "Fagun"'[0m
-    [36mThen I enter last name as [36m[1m"Bhavsar"[0m[0m[36m[90m                                  # features/steps/webform.rb:13[0m[0m
-    [36mThen I enter job title as [36m[1m"QA analyst"[0m[0m[36m[90m                               # features/steps/webform.rb:17[0m[0m
-    [36mThen I select an option as [36m[1m"College"[0m[0m[36m[90m                                 # features/steps/webform.rb:21[0m[0m
-    [36mThen I select a checkbox as [36m[1m"Male"[0m[0m[36m[90m                                   # features/steps/webform.rb:25[0m[0m
-    [36mThen I select years of experience as [36m[1m"10+"[0m[0m[36m[90m                           # features/steps/webform.rb:29[0m[0m
-    [36mThen I select date as [36m[1m"06/07/2019"[0m[0m[36m[90m                                   # features/steps/webform.rb:33[0m[0m
-    [36mAnd I click on Submit button[90m                                         # features/steps/webform.rb:37[0m[0m
-    [36mThen I see success message as [36m[1m"The form was successfully submitted!"[0m[0m[36m[90m # features/steps/webform.rb:41[0m[0m
+  Scenario: Fill the web form with given details[90m # features/webform.feature:6[0m
+    [32mGiven I formy project app link[90m               # features/steps/webform.rb:1[0m[0m
+    [32mThen I click on Complete web form link[90m       # features/steps/webform.rb:5[0m[0m
+    [32mThen I enter first name as [32m[1m"Fagun"[0m[0m[32m[90m           # features/steps/webform.rb:9[0m[0m
+    [32mThen I enter last name as [32m[1m"Bhavsar"[0m[0m[32m[90m          # features/steps/webform.rb:13[0m[0m
+    [32mThen I enter job title as [32m[1m"QA analyst"[0m[0m[32m[90m       # features/steps/webform.rb:17[0m[0m
+    [32mThen I select an option[90m                      # features/steps/webform.rb:21[0m[0m
+    [32mThen I select a checkbox[90m                     # features/steps/webform.rb:25[0m[0m
+    [32mThen I select years of experience[90m            # features/steps/webform.rb:29[0m[0m
+    [32mThen I select date[90m                           # features/steps/webform.rb:33[0m[0m
+    [32mAnd I click on Submit button[90m                 # features/steps/webform.rb:37[0m[0m
+    [32mThen I see success message[90m                   # features/steps/webform.rb:41[0m[0m
 
-[31mFailing Scenarios:[0m
-[31mcucumber -p functional features/webform.feature:6[0m[90m # Scenario: Fill the web form with given details[0m
-
-1 scenario ([31m1 failed[0m)
-11 steps ([31m1 failed[0m, [36m8 skipped[0m, [32m2 passed[0m)
-0m5.819s
+1 scenario ([32m1 passed[0m)
+11 steps ([32m11 passed[0m)
+0m5.366s
