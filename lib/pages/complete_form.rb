@@ -2,30 +2,27 @@ class CompleteForm < Page
   page_url         base_url
 
   def enter_first_name(fname)
-    @browser.element(:id => "first-name").set(fname)
+    @browser.text_field(:id => "first-name").set(fname)
   end
 
   def enter_last_name(lname)
-    @browser.element(:id => "last-name").set(lname)
+    @browser.text_field(:id => "last-name").set(lname)
   end
 
   def enter_job_title(title)
-    @browser.element(:id => "job-title").set(title)
+    @browser.text_field(:id => "job-title").set(title)
   end
 
   def select_college
-    @browser.radio(:text => "
-        College
-      ").set
+    @browser.radio(:id => "radio-button-2" ).set
   end
 
   def check_gender
-    @browser.checkbox(:text => "        Male
-").click
+    @browser.checkbox(:id => "checkbox-1").click
   end
 
   def select_exp
-    @browser.select_list(:id => "select-menu").select("10+")
+    @browser.select_list(:id => "select-menu", :value => "10+").select
   end
 
   def select_date
@@ -33,8 +30,8 @@ class CompleteForm < Page
   end
 
   def click_submit
-    p = @browser.button(:text => "Submit").click
-    p.wait_until_present
+    #require "pry"; binding.pry
+    @browser.element(:class => "btn", :text => "Submit").click
   end
 
   def view_confirmation
