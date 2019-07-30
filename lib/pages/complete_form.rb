@@ -1,12 +1,12 @@
 class CompleteForm < Page
   page_url         base_url
 
-  def enter_first_name(fname)
-    @browser.text_field(:id => "first-name").set(fname)
+  def enter_first_name(firstname)
+    @browser.text_field(:id => "first-name").set(firstname)
   end
 
-  def enter_last_name(lname)
-    @browser.text_field(:id => "last-name").set(lname)
+  def enter_last_name(lastname)
+    @browser.text_field(:id => "last-name").set(lastname)
   end
 
   def enter_job_title(title)

@@ -6,16 +6,16 @@ Then("I click on Complete web form link") do
   on(OpenFormPage).open_web_form
 end
 
-Then("I enter first name as {string}") do |string|
-  on(CompleteForm).enter_first_name(string)
+Then("I enter first name") do
+  on(CompleteForm).enter_first_name(@data["firstname"]
 end
 
-Then("I enter last name as {string}") do |string|
-  on(CompleteForm).enter_last_name(string)
+Then("I enter last name") do
+  on(CompleteForm).enter_last_name(@data["lastname"])
 end
 
-Then("I enter job title as {string}") do |string|
-  on(CompleteForm).enter_job_title(string)
+Then("I enter job title") do
+  on(CompleteForm).enter_job_title(@data['title'])
 end
 
 Then("I select an option") do
