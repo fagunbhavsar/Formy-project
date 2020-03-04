@@ -7,7 +7,7 @@ Then("I click on Complete web form link") do
 end
 
 Then("I enter first name") do
-  on(CompleteForm).enter_first_name(@data["firstname"]
+  on(CompleteForm).enter_first_name(@data["firstname"])
 end
 
 Then("I enter last name") do

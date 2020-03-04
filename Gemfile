@@ -9,6 +9,7 @@ gem 'fig_newton'
 gem 'page-object'
 gem 'service_mock'
 gem 'look_like'
+gem 'ffi'
 gem "pry", :group => :development
 
 group :development, :test do
