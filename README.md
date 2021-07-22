@@ -63,3 +63,14 @@ Watir is a pragrammer friendly ruby interface to Selenium Webdriver API. It prov
 - Open project directory
 - Install gems 
 - Run with rake command
+
+# Preparing test data
+
+Load test data with rake command `db:play`, create data using UI or rails console, run `db:record` and checkin.
+
+
+# Cheatsheet 
+
+[Find a cheatsheet for quick reference to APIs here](https://github.com/nishants/zinc-test-lessons/blob/master/docs/cheat-sheet.md#cheatsheet)
+
+
